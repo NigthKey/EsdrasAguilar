@@ -9,38 +9,61 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #E0F7FA; /* Fondo celeste general */
         }
         .hero {
-            background-color: #007BFF; /* Fondo azul */
-            color: white;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHxKp66-5YymniaaIkxpbK_IANfX2AolW0oA&s'), 
+                              url('https://constructiva.gumlet.io/wp-content/uploads/2023/05/Diseno-sin-titulo-2023-05-30T140205.325-1024x569.png?compress=true&quality=80&w=1024&dpr=2.6'), 
+                              url('https://tytenlinea.com/wp-content/uploads/2020/04/ferreteria.jpg'), 
+                              url('https://d100mj7v0l85u5.cloudfront.net/s3fs-public/2023-04/funciones-del-jefe-de-compras-6.png');
+            background-size: 50% 50%;
+            background-position: top left, top right, bottom left, bottom right;
+            background-repeat: no-repeat;
+            color: white; /* Cambiar a blanco */
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
             text-align: center;
+            position: relative; /* Para posicionar el título */
         }
         h1 {
-            font-size: 3em;
+            font-size: 4em; /* Aumentar tamaño de la fuente */
             margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para mayor contraste */
+            font-family: 'Georgia', serif; /* Cambiar la fuente a una más estética */
+            position: absolute; /* Posicionar el título sobre el fondo */
+            top: 40%; /* Ajusta según sea necesario */
+            left: 50%; /* Centrar el título */
+            transform: translate(-50%, -50%); /* Centrar el título correctamente */
         }
         .content {
-            background-color: #FAF9F6;
             padding: 20px;
             text-align: center;
         }
-        .content h2 {
-            font-size: 2em;
-            color: #333;
+        .section {
+            margin: 40px 0; /* Espaciado entre secciones */
+            padding: 20px;
+            border: 2px solid #007BFF; /* Borde azul */
+            border-radius: 10px; /* Esquinas redondeadas */
+            background-color: #FAF3E0; /* Fondo blanco hueso para la sección */
         }
-        .content p {
-            font-size: 1.2em;
+        .section h2 {
+            font-size: 2.5em; /* Aumentar tamaño del título */
+            color: #333;
+            margin-top: 20px; /* Espacio superior */
+            margin-bottom: 10px; /* Espacio inferior */
+        }
+        .section p {
+            font-size: 1.5em; /* Aumentar tamaño del texto */
             color: #555;
             line-height: 1.6;
+            margin-bottom: 20px; /* Espacio inferior */
         }
-        .content img {
+        .section img {
             width: 100%;
-            max-width: 400px;
+            max-width: 600px; /* Tamaño máximo de la imagen */
             border-radius: 10px;
             margin: 20px 0;
         }
@@ -49,29 +72,71 @@
             color: white;
             text-align: center;
             padding: 20px;
-            font-size: 1.2em;
+            font-size: 1.5em; /* Aumentar tamaño del texto en pie de página */
         }
     </style>
 </head>
 <body>
 
-    <!-- Sección de portada -->
+    <!-- Sección de portada con collage de imágenes -->
     <div class="hero">
         <h1>FERRETERIA ESDRAS AGUILAR</h1>
     </div>
 
     <!-- Sección de contenido principal -->
     <div class="content">
-        <h2>Bienvenidos a Ferretería Esdras Aguilar</h2>
-        <p>En nuestra ferretería encontrarás una gran variedad de productos para la construcción, el hogar, y proyectos personales. Nos enfocamos en ofrecer productos de calidad y un servicio al cliente excepcional.</p>
+        <div class="section">
+            <h2>Bienvenidos a Ferretería Esdras Aguilar</h2>
+            <p>En nuestra ferretería encontrarás una gran variedad de productos para la construcción, el hogar y proyectos personales. Nos enfocamos en ofrecer productos de calidad y un servicio al cliente excepcional.</p>
+            <img src="https://www.bocelujosla86.com/cdn/shop/collections/Ferreteria.jpg?v=1593555968" alt="Imagen de bienvenida">
+        </div>
 
-        <h2>Nuestros Productos</h2>
-        <img src="https://via.placeholder.com/400x300" alt="Imagen de productos">
-        <p>Contamos con una amplia gama de herramientas, materiales de construcción, pinturas, y mucho más para satisfacer tus necesidades.</p>
+        <div class="section">
+            <h2>¿Qué es una ferretería?</h2>
+            <p>Una ferretería es un establecimiento comercial donde se venden diversos tipos de herramientas, materiales de construcción y artículos para el hogar. Las ferreterías son fundamentales para cualquier proyecto de construcción, remodelación o mantenimiento.</p>
+            <p>En ellas, los consumidores pueden encontrar desde clavos y tornillos hasta maquinaria pesada. Además, ofrecen un espacio donde los profesionales de la construcción y los aficionados al bricolaje pueden adquirir los productos necesarios para llevar a cabo sus tareas de manera eficiente.</p>
+            <img src="https://media.istockphoto.com/id/1409316216/es/foto/un-carrito-de-compras-junto-a-un-estante-de-una-ferreter%C3%ADa.jpg?s=612x612&w=0&k=20&c=kFETmVyHIbCUnwQPMsejx2csmKlloViGzEnKZVlHFc4=" alt="Imagen de ferretería">
+        </div>
 
-        <h2>Servicios Especiales</h2>
-        <img src="https://via.placeholder.com/400x300" alt="Imagen de servicios">
-        <p>Ofrecemos asesoría personalizada y servicios de instalación para ciertos productos. Visítanos y conoce todos los beneficios de comprar en nuestra ferretería.</p>
+        <div class="section">
+            <h2>¿Qué se encuentra en esta ferretería?</h2>
+            <p>En Ferretería Esdras Aguilar, ofrecemos una amplia gama de productos, incluyendo:</p>
+            <ul style="list-style-type: none; padding: 0;">
+                <li><strong>Herramientas Manuales:</strong> Desde martillos y destornilladores hasta sierras y llaves inglesas.</li>
+                <li><strong>Herramientas Eléctricas:</strong> Taladros, sierras eléctricas y otros equipos para facilitar tu trabajo.</li>
+                <li><strong>Materiales de Construcción:</strong> Cemento, ladrillos, maderas y otros insumos esenciales.</li>
+                <li><strong>Pinturas y Acabados:</strong> Una variedad de pinturas para interiores y exteriores, así como acabados para madera.</li>
+                <li><strong>Jardinería:</strong> Herramientas y suministros para cuidar y embellecer tu jardín.</li>
+            </ul>
+            <p>Todo lo que necesitas para tus proyectos está aquí. Nuestro equipo de profesionales está siempre dispuesto a asesorarte y guiarte en la elección de los productos adecuados.</p>
+            <img src="https://daemon4.com/wp-content/uploads/codificar-productos-en-ferreterias.jpg" alt="Imagen de productos">
+        </div>
+
+        <div class="section">
+            <h2>¿Para qué sirven las ferreterías?</h2>
+            <p>Las ferreterías son fundamentales para proporcionar los materiales y herramientas necesarias para la construcción, reparación y mantenimiento de viviendas y otros espacios. Sin ellas, muchos proyectos de bricolaje y mejoras en el hogar serían difíciles de realizar.</p>
+            <p>Las ferreterías ofrecen:</p>
+            <ul style="list-style-type: none; padding: 0;">
+                <li><strong>Soluciones Prácticas:</strong> Productos que ayudan a resolver problemas cotidianos en el hogar.</li>
+                <li><strong>Asesoría Especializada:</strong> Personal capacitado para recomendar las mejores opciones según tus necesidades.</li>
+                <li><strong>Variedad de Productos:</strong> Desde artículos básicos hasta productos especializados para proyectos complejos.</li>
+            </ul>
+            <p>Además, fomentan la creatividad y el espíritu emprendedor, ofreciendo los materiales necesarios para que cualquier persona pueda llevar a cabo su visión de mejora o creación.</p>
+            <img src="https://ferreteriacerca.com.mx/wp-content/uploads/2023/12/fix-ferreterias-garcia-nuevo-leon.jpeg" alt="Imagen de uso de herramientas">
+        </div>
+
+        <div class="section">
+            <h2>Servicios Especiales</h2>
+            <p>Ofrecemos asesoría personalizada y servicios de instalación para ciertos productos. Ya sea que necesites ayuda para elegir la herramienta correcta o quieras que un experto realice la instalación, estamos aquí para ayudarte.</p>
+            <p>Además, ofrecemos:</p>
+            <ul style="list-style-type: none; padding: 0;">
+                <li><strong>Entregas a Domicilio:</strong> Para que puedas recibir tus productos sin necesidad de desplazarte.</li>
+                <li><strong>Formación y Talleres:</strong> Cursos sobre el uso de herramientas y técnicas de bricolaje.</li>
+                <li><strong>Promociones y Descuentos:</strong> Ofertas especiales en productos seleccionados para que ahorres mientras compras.</li>
+            </ul>
+            <p>Visítanos y conoce todos los beneficios de comprar en nuestra ferretería.</p>
+            <img src="https://www.yura.com.pe/wp-content/uploads/ferreteros-articulo.jpg" alt="Imagen de servicios especiales">
+        </div>
     </div>
 
     <!-- Sección de contacto -->
@@ -83,3 +148,4 @@
 
 </body>
 </html>
+
