@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             background-color: #6a0dad; /* Color morado */
+            position: relative; /* Para posicionar el reproductor */
         }
         .hero {
             background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHxKp66-5YymniaaIkxpbK_IANfX2AolW0oA&s'), 
@@ -74,6 +75,26 @@
             padding: 20px;
             font-size: 1.5em; /* Aumentar tamaño del texto en pie de página */
         }
+        .button-container {
+            margin: 20px 0;
+        }
+        .button {
+            display: inline-block;
+            background-color: #007BFF; /* Color del botón */
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            margin: 10px; /* Espaciado entre botones */
+        }
+        /* Reproductor de música */
+        audio {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            z-index: 100; /* Asegura que el reproductor esté por encima de otros elementos */
+        }
     </style>
 </head>
 <body>
@@ -127,33 +148,31 @@
 
         <div class="section">
             <h2>Servicios Especiales</h2>
-            <p>Ofrecemos asesoría personalizada y servicios de instalación para ciertos productos. Ya sea que necesites ayuda para elegir la herramienta correcta o quieras que un experto realice la instalación, estamos aquí para ayudarte.</p>
-            <p>Además, ofrecemos:</p>
-            <ul style="list-style-type: none; padding: 0;">
-                <li><strong>Entregas a Domicilio:</strong> Para que puedas recibir tus productos sin necesidad de desplazarte.</li>
-                <li><strong>Formación y Talleres:</strong> Cursos sobre el uso de herramientas y técnicas de bricolaje.</li>
-                <li><strong>Promociones y Descuentos:</strong> Ofertas especiales en productos seleccionados para que ahorres mientras compras.</li>
-            </ul>
-            <p>Visítanos y conoce todos los beneficios de comprar en nuestra ferretería.</p>
-            <img src="https://www.yura.com.pe/wp-content/uploads/ferreteros-articulo.jpg" alt="Imagen de servicios especiales">
+            <p>Ofrecemos asesoría personalizada y servicios de instalación para ciertos productos. Ya sea que necesites ayuda con la selección de materiales o con la instalación de sistemas de plomería, nuestro equipo está aquí para ayudarte.</p>
+            <p>No dudes en preguntar por nuestros servicios al visitar la tienda.</p>
+            <img src="https://img.freepik.com/vector-gratis/hombre-instalando-puerta_23-2148612744.jpg" alt="Imagen de servicios">
+        </div>
+
+        <!-- Botones para otras páginas -->
+        <div class="button-container">
+            <a href="https://nigthkey.github.io/Dise-o-y-Construccion-de-muebles/" class="button">Diseño y Construcción de Muebles</a>
+            <a href="https://nigthkey.github.io/Tratamientos-y-Acabados-de-Superficies/" class="button">Tratamientos y Acabados de Superficies</a>
         </div>
     </div>
 
-    <!-- Sección de contacto -->
+    <!-- Reproductor de música -->
+    <audio controls>
+        <source src="ruta/a/tu/musica.mp3" type="audio/mpeg"> <!-- Cambia "ruta/a/tu/musica.mp3" por la ruta de tu archivo de música -->
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- Pie de página -->
     <div class="footer">
-        <h2>CONTACTANOS</h2>
-        <p>Correo: aguilarferreteria@gmail.com</p>
+        <p>CONTACTANOS</p>
+        <p>Email: <a href="mailto:aguilarferreteria@gmail.com" style="color: white;">aguilarferreteria@gmail.com</a></p>
         <p>Teléfono: 1923931</p>
     </div>
 
 </body>
 </html>
-<div id="youtube-audio">
-  <iframe
-    width="0"
-    height="0"
-    src="https://www.youtube.com/embed/ChfXIWReoXA&list=RDQMfYtkXSYkXCo&start_radio=1?autoplay=1&loop=1&playlist=ChfXIWReoXA&list=RDQMfYtkXSYkXCo&start_radio=1"
-    frameborder="0"
-    allow="autoplay"
-  ></iframe>
-</div>
+
